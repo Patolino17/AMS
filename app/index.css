@@ -83,6 +83,9 @@ a{
 #main-navigation nav ul li:hover{
 	background: #11488D;
 	color: #fff;
+	border-radius: 5px;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
 }
 
 /*Post part*/
@@ -110,7 +113,7 @@ a{
 	height: 50px;
 	margin-top: -10px;
 	margin-left: -10px;
-	background: #CD100F;
+	background: #d35400;
 	text-align: center;
 	font-size: 20px;	
 	border-radius: 3px;
@@ -145,7 +148,7 @@ a{
 }
 
 .articule-prev button:hover{
-	background: #CD100F;	
+	background: #d35400;	
 }
 
 .articule-prev article {
@@ -160,7 +163,7 @@ a{
 }
 
 .articule-prev article > p {
-	background: #CD100F;
+	background: #d35400;
 	color: #fff;
 	font-size: 15px;
 	text-align: justify;	
