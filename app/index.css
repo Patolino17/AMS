@@ -1,7 +1,12 @@
 @import url('reset.css');
 body{
 	background: #0E71B2;
-	
+}
+
+@media (max-width: 10em){
+	body {
+		background: #fff;
+	}
 }
 
 ul {
@@ -26,10 +31,18 @@ a{
 
 #main-header h1{
 	float: left;
-	margin-left: 100px;
+	margin-left: 1em;
 	font-size: 40px;
 	margin-top: 10px;
 	letter-spacing: 2px;
+}
+
+
+@media (max-width: 360px){
+	#main-header h1{
+		font-size: 30px;
+		margin-top: 20px;		
+	}
 }
 
 #main-header a{	
@@ -45,6 +58,7 @@ a{
 		-moz-border-radius: 5px;
 		-webkit-border-radius: 5px;	
 }
+
 /*Aside Bar*/
 #main-navigation{
 	float: left;
@@ -57,6 +71,12 @@ a{
 	box-shadow: 0px 1px 1px #000;
 		-moz-box-shadow: 0px 1px 1px #000;
 		-webkit-box-shadow: 0px 1px 1px #000;
+}
+
+@media (max-width: 800px){
+	#main-navigation{
+		display: none;
+	}
 }
 
 #main-navigation nav{
@@ -106,7 +126,22 @@ a{
 		-webkit-box-shadow: 0px 1px 1px #000;
 }
 
+@media (max-width: 800px){
+	.articule-prev{
+		float: left;
+		margin-left: 15px;
+		width: 90%;
+		margin-top: 20px;
+		margin-bottom: 10px;
+		margin-right: 15px;
+	}
+}
 
+@media (max-width: 767px){
+	.articule-prev {		
+		margin-bottom: 40px;
+	}
+}
 
 .articule-prev header{ 
 	width: 20%;
@@ -123,11 +158,21 @@ a{
 		-moz-box-shadow: 0px 1px 3px #000;
 		-webkit-box-shadow: 0px 1px 3px #000;
 }
+
+@media (max-width: 767px){
+	.articule-prev header{		
+		width: 50%;
+		margin-top: -25px;
+		margin-left: 20%;
+		position: absolute;		
+	}
+}
+
 .articule-prev h2{ 
 	padding-top: 15px;
 	width: 100%;
 }
-.articule-prev button{
+.articule-prev .boton1{
 	width: 50px;
 	height: 50px;
 	background: #11488D;
@@ -147,30 +192,142 @@ a{
 	letter-spacing: 1px;
 }
 
+@media (max-width: 767px){
+	.articule-prev .boton1{
+		display: none;
+	}
+}
+
+.articule-prev .boton2{
+	width: 50px;
+	height: 50px;
+	background: #11488D;
+	float: right;
+	margin-right: 50px;
+	margin-top: -30px;
+	border:none;
+	margin-bottom: 30px;
+	color: #fff;
+	border-radius: 50%;
+		-moz-border-radius: 50%;
+		-webkit-border-radius: 50%;	
+	box-shadow: 0px 1px 1px #000;
+		-moz-box-shadow: 0px 1px 1px #000;
+		-webkit-box-shadow: 0px 1px 1px #000;
+	transition: all .5s;
+	letter-spacing: 1px;
+}
+
+@media (min-width: 767px){
+	.articule-prev .boton2{
+		display: none;	
+	}
+}
+
+@media (max-width: 767px){
+	.articule-prev .boton2{
+		float: left;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		margin-left: 45%;
+
+	}
+}
+
+
 .articule-prev button:hover{
 	background: #d35400;	
 }
 
-.articule-prev article {
+.articule-prev article {	
 	float: left;
+	width: 100%;
+	position: static;
 	
 }
 
 .articule-prev article img {	
 	width: 220px;
-	height: 150px;
-	float: left;	
+	height: 10em;
+	float: left;
+
 }
 
+
+
+@media (max-width: 1280px){
+	.articule-prev article img{
+		height: 13em;
+	}
+}
+
+@media (max-width: 768px){
+	.articule-prev article img{
+		height: 15em;
+	}
+}
+
+@media (max-width: 767px){
+	.articule-prev article img{
+		width: 100%;
+		position: static;
+	}
+}
+
+@media (max-width: 385px){
+	.articule-prev article img{
+
+	}
+}
+
+/*
+@media (max-width: 660px){
+	.articule-prev article img{
+		height: 276px;
+	}
+}
+
+@media (max-width: 660px){
+	.articule-prev article img{
+		height: 276px;
+	}
+}*/
+
 .articule-prev article > p {
+	display: inline-block;
+	position: absolute;	
 	background: #d35400;
 	color: #fff;
 	font-size: 15px;
 	text-align: justify;	
 	line-height: 18px;
-	height: 100%;
-	padding: 48px 50px 48px 30px; 	
-	margin-left: 200px;
+	width: auto;
+	height: 40%;
+	padding: 48px 50px 48px 30px;
+	
+}
+
+@media (max-width: 1280px) {
+	.articule-prev article > p{
+		height: 54%;
+
+	}
+}
+
+@media (max-width: 768px){
+	.articule-prev article > p{
+		height: 60%;
+
+	}
+}
+
+
+@media (max-width: 767px){
+	.articule-prev article > p{
+		direction: block;
+		position: relative;
+
+	}
 }
 
 
