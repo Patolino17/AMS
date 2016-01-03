@@ -14,22 +14,40 @@
         <meta name="apple-mobile-web-app-status-bar-style" content="translucent-black">
         <meta name="apple-mobile-web-app-title" content="My App">
         <title>Circus Blog</title>
-        <link rel="icon" href="image/favicon.png" type="image/x-icon">
+        <link rel="icon" href="image/favicon.ico" type="image/x-icon">
         <!--link rel="nofollow" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" /> <!--Resetear estilos de los navegadores-->
         <link rel="nofollow" href="https://fonts.googleapis.com/css?family=RobotoDraft:100, 200, 300,400,500,700,400italic"> <!-- fuente a usar-->
-        <link rel="stylesheet" type="text/css" href="app/index.css">        
-        <!--<link rel="nofollow" href="app/app.css"
-        <link href="app/app.js">-->    
+        <link rel="stylesheet" type="text/css" href="app/index.css">                
     </head>
 
     <body>
         <header id="main-header">
             <h1>Circus Blog</h1>
-            <a href="#">Log Out</a>
-        </header>        
+            <nav> 
+                <ul>                    
+                    <li>
+                        <div class="menu_bar">            
+                            <a href="#" class="bt-menu"><label id="hamburger"><input type="checkbox" id="flag"/><span></span></label>   </a>
+                        </div>
+                    </li>
+                    <li><a id="login" href="#">Log Out</a></li>
+                </ul>
+            </nav>
+        </header>
+        <header id="mobile_nav">        
+            <nav>
+                <ul>
+                    <li><a href="#"><span class="icon-home"></span>Inicio</a></li>
+                    <li><a href="#"><span class="icon-briefcase"></span>Trabajo</a></li>
+                    <li><a href="#"><span class="icon-rocket"></span>Proyecto</a></li>
+                    <li><a href="#"><span class="icon-earth"></span>Servicios</a></li>
+                    <li><a href="#"><span class="icon-envelop"></span>Contacto</a></li>     
+                </ul>
+                </nav>
+        </header>
         <div id="main-container">
             <aside id="main-navigation">
-                <nav>
+                <!--nav>
                     <ul>
                         <li>Seccion S</li>
                         <li>Seccion T</li>
@@ -40,16 +58,16 @@
                         <li>Seccion Y</li>
                         <li>Seccion Z</li>
                     </ul>
-                </nav>
-            </aside>        
+                </nav-->
+            </aside> 
             <div id="posts">
-                <section class="articule-prev">
+                <!--section class="articule-prev">
                     <header>
                         <h2>Crazy Circus</h2>
                     </header>
                     <button class="boton1">Leer</button>
                     <article>
-                        <img src="image/thumb1.jpg">
+                        <img src="http://pipsum.com/400x200.jpg">
                         <p>
                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec enim tellus, varius quis rutrum ac, 
                            sollicitudin eu massa. In ornare tincidunt mauris, consectetur semper massa lacinia id. 
@@ -65,7 +83,7 @@
                     </header>
                     <button class="boton1">Leer</button>
                     <article>
-                        <img src="image/thumb2.jpg">
+                        <img src="http://pipsum.com/400x200.jpg">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec enim tellus, varius quis rutrum ac, 
                            sollicitudin eu massa. In ornare tincidunt mauris, consectetur semper massa lacinia id. 
                            Sed mattis a orci eu bibendum. Proin posuere rutrum mi, at vehicula nisi consequat ut. 
@@ -80,7 +98,7 @@
                     </header>
                     <button class="boton1">Leer</button>
                     <article>
-                        <img src="image/mimo.jpg">
+                        <img src="http://pipsum.com/400x200.jpg">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec enim tellus, varius quis rutrum ac, 
                            sollicitudin eu massa. In ornare tincidunt mauris, consectetur semper massa lacinia id. 
                            Sed mattis a orci eu bibendum. Proin posuere rutrum mi, at vehicula nisi consequat ut. 
@@ -88,11 +106,14 @@
                         </p>
                     </article>
                     <button class="boton2">Leer</button>
-                </section>
+                </section-->
             </div>    
-        </div>         
+        </div>
+                  
+        <script src="http://code.jquery.com/jquery-latest.js"></script>
+        <script type="text/javascript" src="app/index.js"></script>
+        <script type="text/javascript" src="app/menu.js"></script>
         
-        <script src="app/app.js"></script>
     </body>
 
 </html>
