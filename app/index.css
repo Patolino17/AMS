@@ -90,9 +90,14 @@ a{
 
 #mobile_nav nav ul li {
 	float: left;
+	color: #fff;
+	padding: 20px;
+	display: block;
+	text-decoration: none;
+	margin-right: 10px;
 }
 
-#mobile_nav nav ul li a{
+/*#mobile_nav nav ul li a{
 	color: #fff;
 	padding: 20px;
 	display: block;
@@ -101,7 +106,7 @@ a{
 
 #mobile_nav nav ul li span {
 	margin-right: 10px;
-}
+}*/
 
 #mobile_nav nav ul li a:hover {
 	background:#037E8C;

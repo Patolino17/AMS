@@ -5,8 +5,10 @@
 			DataApi: dataApiFunc(),
 			addMenu: addMenuFunc,
 			addSections: addSectionsFunc,
+			addMenuMobile: addMenuMobileFunc,
 			sections: null,
 			menu: null,
+			mobilemenu: null,
 			init: init
 		}
 
@@ -15,12 +17,37 @@
 		function init(){
 			this.addMenu();
 			this.addSections();
+			this.addMenuMobile();
 		};
 
 		function addMenuFunc() {
 			
 			function constructMenu() {
 				var container = this.DOMapi.getContainer("main-navigation");
+				var newNav = document.createElement("nav");
+				var newList = document.createElement("ul");
+				newNav.appendChild(newList);
+				container.appendChild(newNav);
+				
+				function addList(item, index) {
+					var index = index + 1;
+					newList.innerHTML += "<li>"+(item.title + " " + index)+"</li>";
+				}
+				this.DOMapi.addItems(this.menu, addList)
+			}
+
+			function addMenuToDOM(obj) {
+				this.sections = obj.data.sections;
+				this.menu = obj.data.menu;
+				constructMenu.call(this);
+			}
+			this.DataApi.getData(addMenuToDOM.bind(this));
+		};
+
+		function addMenuMobileFunc() {
+			
+			function constructMenu() {
+				var container = this.DOMapi.getContainer("mobile_nav");
 				var newNav = document.createElement("nav");
 				var newList = document.createElement("ul");
 				newNav.appendChild(newList);
